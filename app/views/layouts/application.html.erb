@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RailsSimpleAirbnb</title>
+    <script src="https://kit.fontawesome.com/1fd2d0a631.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +12,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <h5 class="px-5">Simple Airbnb</h5>
+        <%# <img class="rounded" src="https://www.zilliondesigns.com/blog/wp-content/uploads/Airbnb-Logo-Contest.png" width="120" height="auto" alt=""> %>
+      </a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
